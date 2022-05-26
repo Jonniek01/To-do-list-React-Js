@@ -39,7 +39,7 @@ function TodoList() {
         setTodos(updatedTodos);
 
     }
-    return ( <div className='todoList'>
+    return ( <div className='todo-app'>
         <h1>What's the plan for Today?</h1>
         <TodoForm onSubmit={addTodo}/>
         <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo}/>

@@ -29,7 +29,7 @@ function Todo({todos,completeTodo,removeTodo,updateTodo}) {
     return todos.map((todo,index)=>(
         <div className={todo.isComplete?'todo-row complete':'todo-row'}
          key={index}>
-             <div key={todo.id} onClick={()=>completeTodo(todo.id)}>{todo.id},{todo.text}</div>
+             <div key={todo.id} onClick={()=>completeTodo(todo.id)}>{todo.text}</div>
                 <div className='12,ccicons'>
                     <RiCloseCircleLine onClick={()=>removeTodo(todo.id)} className="delete-con"/>
                     <TiEdit onClick={()=>setEdit({id:todo.id,value:todo.text})} className="delete-con"/>
